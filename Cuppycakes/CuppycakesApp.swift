@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct CuppycakesApp: App {
+    @State private var showMainView = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if showMainView {
+                Store()
+            } else {
+               splitScreen()
+                    .onAppear() {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            showMainView = true
+                            
+                    }
+                }
+            }
         }
     }
 }
