@@ -10,6 +10,8 @@ import SwiftUI
 struct Store: View {
     @State var showCart = false
     @State var goToCart = false
+    @State var showProfile = false
+    @State var openMenu = false
     
     var columns = [GridItem(.flexible()), GridItem(.flexible())]
     var items: [[Any]] = shopItems
@@ -17,12 +19,7 @@ struct Store: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 5) {
-                VStack { Text("Cuppy Cupcakes")
-                    
-                        .foregroundColor(Color.black)
-                        .font(.custom("Avenir-Medium", size: 35))
-                        .frame(width: 300, alignment: .leading)
-                }
+                
                 ScrollView() {
                     LazyVGrid(columns: columns, spacing: 30) {
                         ForEach(0..<items.count, id: \.self) { item in
@@ -31,25 +28,42 @@ struct Store: View {
                     }
                 }.padding(12)
             }
-            Spacer()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
                         Button(action: {
-                            showCart = true
-                        }) { Spacer()
-                            Image(systemName: "cart")
-                                .foregroundColor(.black)
+                            showProfile = true
+                            
+                        }) {
+                            Image(systemName: "line.3.horizontal")
+                                .foregroundColor(.pink)
                         }
                     }
+                
+                ToolbarItem(placement: .principal) {
+                    Text("Cuppy Cupcake")
+                        .foregroundColor(.pink)
+                        .font(.custom("Avenir-Medium", size: 27))
+                    
                 }
-                .sheet(isPresented: $showCart) {
-                    Cart()
+                
+                
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showCart = true
+                    }) { Spacer()
+                        Image(systemName: "cart")
+                            .foregroundColor(.pink)
+                    }
                 }
+            } .sheet(isPresented: $showCart) {
+                Cart()
+            }
         }
     }
 }
 
-struct Shop_Previews: PreviewProvider {
+struct Store_Previews: PreviewProvider {
     static var previews: some View {
         Store()
     }
