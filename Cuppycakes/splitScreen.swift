@@ -16,10 +16,10 @@ struct splitScreen: View {
             Color.pink
                 .ignoresSafeArea()
             
-            Image("NiceCupcake")
+            Image("launchCupcake")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 100)
+                .frame(height: 90)
                 .cornerRadius(10)
                 .scaleEffect(scale)
                 .animation(

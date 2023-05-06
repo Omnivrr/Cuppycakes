@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1990DBDB2A0468BB00D5F200 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1990DBDA2A0468BB00D5F200 /* Profile.swift */; };
+		1990DBDD2A0597B400D5F200 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1990DBDC2A0597B400D5F200 /* SideMenu.swift */; };
 		199B5E2A2A0317710082E77D /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199B5E292A0317710082E77D /* Cart.swift */; };
 		19ED0BEB2A0286B700BF4653 /* CuppycakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED0BEA2A0286B700BF4653 /* CuppycakesApp.swift */; };
 		19ED0BED2A0286B700BF4653 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED0BEC2A0286B700BF4653 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1990DBDA2A0468BB00D5F200 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1990DBDC2A0597B400D5F200 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		199B5E292A0317710082E77D /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		19ED0BE72A0286B700BF4653 /* Cuppycakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuppycakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19ED0BEA2A0286B700BF4653 /* CuppycakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuppycakesApp.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				19ED0BEC2A0286B700BF4653 /* ContentView.swift */,
 				19ED0BFA2A02909700BF4653 /* storeItem.swift */,
 				19ED0BFC2A029D6900BF4653 /* Store.swift */,
+				1990DBDC2A0597B400D5F200 /* SideMenu.swift */,
 				1990DBDA2A0468BB00D5F200 /* Profile.swift */,
 				199B5E292A0317710082E77D /* Cart.swift */,
 				19ED0BF82A028C0A00BF4653 /* splitScreen.swift */,
@@ -158,6 +161,7 @@
 				19ED0BFD2A029D6900BF4653 /* Store.swift in Sources */,
 				1990DBDB2A0468BB00D5F200 /* Profile.swift in Sources */,
 				19ED0BFF2A02B3F900BF4653 /* Data.swift in Sources */,
+				1990DBDD2A0597B400D5F200 /* SideMenu.swift in Sources */,
 				19ED0BED2A0286B700BF4653 /* ContentView.swift in Sources */,
 				199B5E2A2A0317710082E77D /* Cart.swift in Sources */,
 				19ED0BEB2A0286B700BF4653 /* CuppycakesApp.swift in Sources */,

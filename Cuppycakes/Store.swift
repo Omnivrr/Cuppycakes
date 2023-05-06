@@ -1,10 +1,9 @@
 //
-//  Shop.swift
-//  GroceryAppTut
+//  Store.swift
+//  Cuppycakes
 //
-//  Created by Ahmed Gagan on 15/01/23.
+//  Created by Bukhari Abdulkadir on 03/05/2023.
 //
-
 import SwiftUI
 
 struct Store: View {
@@ -28,10 +27,13 @@ struct Store: View {
                     VStack(spacing: 10) {
                         HStack {
                             Button(action: {
-                                showProfile = true
+                                openMenu = true
                             }) {
                                 Image(systemName: "line.3.horizontal")
                                     .foregroundColor(.white)
+                                    .onTapGesture {
+                                        self.openMenu =  true
+                                    }
                             }
 
                             Spacer()
@@ -77,7 +79,7 @@ struct Store: View {
                         }
                     }
                 }
-                .padding(.top, -50)
+                .padding(.top, -35)
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -91,6 +93,7 @@ struct Store: View {
         }
     }
 }
+
 
 struct Store_Previews: PreviewProvider {
     static var previews: some View {

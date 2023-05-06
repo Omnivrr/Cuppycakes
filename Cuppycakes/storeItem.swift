@@ -1,3 +1,4 @@
+//
 //  storeItem.swift
 //  Cuppycakes
 //
@@ -36,6 +37,7 @@ struct storeItem: View {
                         .frame(width: 80, height: 25)
                         .background(Color.pink)
                         .cornerRadius(7)
+                
                     
                 }
                 Text("")
