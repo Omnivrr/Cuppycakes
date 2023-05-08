@@ -14,7 +14,7 @@ struct Store: View {
     @State var searchText = ""
 
     var columns = [GridItem(.flexible()), GridItem(.flexible())]
-    var items: [[Any]] = shopItems
+    var items: [[Any]] =  shopItems
 
     var body: some View {
         NavigationView {
